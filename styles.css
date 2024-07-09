@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    justify-content: space-between;
+    font-size: large;
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    background-image: url('img/landing.jpg'), linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    width: 100%;
+    height: 60vh;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#products {
+    padding: 50px 0;
+}
+
+#products h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-card div img {
+    width: 100%;
+    height: auto;
+    max-height: 284px;
+}
+
+.product-card .Product-name{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.product-card .Product-desc{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.product-card .product-Price{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.product-card p {
+    margin: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.product-card button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius:5px ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.5s;
+}
+
+.product-card button:hover {
+    background: #555;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-size:20px;
+}
+
+.button:active {
+    background-color: #333;
+    box-shadow: 0 5px #660;
+    transform: translateY(4px);
+  }
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#main{
+    font-size: 50px;
+}
+footer .container #Contact {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    justify-content: space-between;
+    font-style: oblique;
+    margin-bottom: 10px;
+}
+
+footer .container #Contact a{
+    text-decoration: none;
+    color: white;
+}
